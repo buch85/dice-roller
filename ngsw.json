@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1595580039096,
+  "timestamp": 1595606536430,
   "index": "/dice-roller/index.html",
   "assetGroups": [
     {
@@ -10,14 +10,14 @@
       "urls": [
         "/dice-roller/favicon.ico",
         "/dice-roller/index.html",
-        "/dice-roller/main-es2015.0cdfddf03446a6f2a4ce.js",
-        "/dice-roller/main-es5.0cdfddf03446a6f2a4ce.js",
+        "/dice-roller/main-es2015.0a298ca74f830909d88e.js",
+        "/dice-roller/main-es5.0a298ca74f830909d88e.js",
         "/dice-roller/manifest.webmanifest",
         "/dice-roller/polyfills-es2015.f332a089ad1600448873.js",
         "/dice-roller/polyfills-es5.177e85a9724683782539.js",
         "/dice-roller/runtime-es2015.0dae8cbc97194c7caed4.js",
         "/dice-roller/runtime-es5.0dae8cbc97194c7caed4.js",
-        "/dice-roller/styles.9308c6e5e1a1b093f9db.css"
+        "/dice-roller/styles.8f97324efd503b37523b.css"
       ],
       "patterns": []
     },
@@ -49,15 +49,15 @@
     "/dice-roller/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/dice-roller/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/dice-roller/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/dice-roller/index.html": "7d5c36f691f2c04772e29db3fcc9b31f4914ccd7",
-    "/dice-roller/main-es2015.0cdfddf03446a6f2a4ce.js": "76679c01b70fa9549f0879655ef36127defa0d68",
-    "/dice-roller/main-es5.0cdfddf03446a6f2a4ce.js": "2afba60af475efaff0f1b5d111ebf4b2569be38d",
+    "/dice-roller/index.html": "3380c0e60d3d5f97da641d612562ccc3e2607f8c",
+    "/dice-roller/main-es2015.0a298ca74f830909d88e.js": "72bcfc4873f09fa17ad7502694c05a3eea9a7e24",
+    "/dice-roller/main-es5.0a298ca74f830909d88e.js": "dadc9f0aa80580b46120d3c6e8d27735c5e4c1dd",
     "/dice-roller/manifest.webmanifest": "899a90bf0874139fd55615485b28a612f4c9f8d3",
     "/dice-roller/polyfills-es2015.f332a089ad1600448873.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
     "/dice-roller/polyfills-es5.177e85a9724683782539.js": "8aa26ea87b9958c6bd13b7c257c0e9940438e684",
     "/dice-roller/runtime-es2015.0dae8cbc97194c7caed4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
     "/dice-roller/runtime-es5.0dae8cbc97194c7caed4.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "/dice-roller/styles.9308c6e5e1a1b093f9db.css": "ae9961c1abf72fe7ceccd81e66cf9743fc3dd143"
+    "/dice-roller/styles.8f97324efd503b37523b.css": "3e7c4e8cc3d10d11d7e12c70a0a9ef214dbc81ce"
   },
   "navigationUrls": [
     {
