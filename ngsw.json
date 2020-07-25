@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1595709531044,
+  "timestamp": 1595710163541,
   "index": "/dice-roller/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "/dice-roller/favicon.ico",
         "/dice-roller/index.html",
-        "/dice-roller/main-es2015.0fb19af31b54edec150b.js",
-        "/dice-roller/main-es5.0fb19af31b54edec150b.js",
+        "/dice-roller/main-es2015.082354c5b1dd985ff95c.js",
+        "/dice-roller/main-es5.082354c5b1dd985ff95c.js",
         "/dice-roller/manifest.webmanifest",
         "/dice-roller/polyfills-es2015.f332a089ad1600448873.js",
         "/dice-roller/polyfills-es5.177e85a9724683782539.js",
@@ -49,9 +49,9 @@
     "/dice-roller/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/dice-roller/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/dice-roller/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/dice-roller/index.html": "dcb18d5f9b65f2c8b0f6fefd773b90ebc95fdb5f",
-    "/dice-roller/main-es2015.0fb19af31b54edec150b.js": "7b2cc64eb42ce6d6a1eca68319216fd0199cd7a3",
-    "/dice-roller/main-es5.0fb19af31b54edec150b.js": "6736586b7a6ad98101597aa732e21ff812c70137",
+    "/dice-roller/index.html": "0918c75229506f05849a3cb1f24888c218427a34",
+    "/dice-roller/main-es2015.082354c5b1dd985ff95c.js": "3d3be901b806b3a21b57c8b8da2fd5f207d35136",
+    "/dice-roller/main-es5.082354c5b1dd985ff95c.js": "2e37cfcaa69b40a5994636ce59bfe68709067341",
     "/dice-roller/manifest.webmanifest": "899a90bf0874139fd55615485b28a612f4c9f8d3",
     "/dice-roller/polyfills-es2015.f332a089ad1600448873.js": "72ad4ccc0a3916ae4598199447cdeadd6d380570",
     "/dice-roller/polyfills-es5.177e85a9724683782539.js": "8aa26ea87b9958c6bd13b7c257c0e9940438e684",
