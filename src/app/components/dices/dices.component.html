@@ -1,0 +1,83 @@
+<div style="height: 100%">
+  <div style="padding: 1rem" [style.margin-bottom]="bottomPanel.clientHeight+'px'">
+    <div fxLayout="row wrap">
+      <button *ngFor="let diceButton of diceButtons" mat-fab color="primary" class="dice-button"
+              (click)="onDiceButton(diceButton)">
+        {{diceButton}}
+      </button>
+    </div>
+    <div fxLayout="row wrap">
+      <button *ngFor="let operationButton of operationButtons" mat-fab class="operation-button"
+              (click)="onOperationButton(operationButton)">
+        {{operationButton}}
+      </button>
+    </div>
+    <div fxLayout="row wrap">
+      <button *ngFor="let numberButton of numberButtons" mat-fab color="warn" class="operation-button"
+              (click)="onNumberButton(numberButton)">
+        +{{numberButton}}
+      </button>
+    </div>
+  </div>
+  <div
+    style="position: fixed;bottom: 0;width: 100%;padding: 1rem;border-top:1px solid whitesmoke;border-top-left-radius: 4px;border-top-right-radius: 4px"
+    fxLayout="column" fxLayoutGap="5px" class="mat-drawer-container" #bottomPanel>
+    <mat-card *ngIf="selectedChip">
+      <mat-card-title>Dice editor</mat-card-title>
+      <mat-card-content>
+        <div fxFlex="row " fxLayoutGap="10px">
+        <span>
+          <button mat-mini-fab color="primary" (click)="decreaseCount()">-</button>
+          <span style="padding: 0 5px"><strong>{{selectedChip.count}}d{{selectedChip.sides}}</strong></span>
+          <button mat-mini-fab color="primary" (click)="increaseCount()">+</button>
+        </span>
+          <mat-form-field>
+            <mat-label>Modifier</mat-label>
+            <mat-select (selectionChange)="modifierSelectionChanged($event)"
+                        [value]="selectedChip.getCurrentModifierOption()"
+            >
+              <mat-option *ngFor="let modifierOption of selectedChip.getModifierOptions()"
+                          [value]="modifierOption">{{modifierOption.name}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+          <ng-container *ngIf="selectedChip.getCurrentModifierOption() as selectedOption; ">
+            <mat-form-field *ngFor="let modPart of selectedOption.parts">
+              <input matInput placeholder="{{modPart.name}}"
+                     [ngModel]="selectedChip.getModifierPart(selectedOption,modPart)"
+                     (ngModelChange)="setSelectedChipModifierPart(selectedOption,modPart,$event)">
+            </mat-form-field>
+          </ng-container>
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <mat-chip-list>
+      <ng-container *ngFor="let chip of chips">
+        <mat-chip *ngIf="chip.type==='dice'"
+                  [value]="chip"
+                  [selected]="isSelected(chip)"
+                  (click)="toggleSelection(chip)">
+          <span>{{chip.getText()}}</span>
+        </mat-chip>
+        <mat-basic-chip disabled [selectable]="false" *ngIf="!chip.type">{{chip.getText()}}</mat-basic-chip>
+      </ng-container>
+    </mat-chip-list>
+    <div fxLayout="column">
+      <mat-form-field appearance="fill">
+        <mat-label>Enter your dices</mat-label>
+        <input type="text" matInput [ngModel]="rollExpression$|async"
+               (ngModelChange)="expressionChanged($event)"
+               (focus)="toggleSelection(undefined)"
+               #textAreaElement/>
+        <button mat-button *ngIf="textAreaElement.value" matSuffix mat-icon-button aria-label="Clear"
+                (click)="expressionChanged('')">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
+      <div fxLayout="row wrap">
+        <button mat-raised-button (click)="roll(textAreaElement.value)">Roll!</button>
+        <button mat-raised-button (click)="save(textAreaElement.value)">Save</button>
+      </div>
+    </div>
+  </div>
+</div>

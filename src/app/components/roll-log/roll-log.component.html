@@ -1,0 +1,4 @@
+<span>Selected id: {{selectedId}}</span>
+<ul>
+  <li *ngFor="let roll of (rollLogs$|async)">{{roll.id === selectedId ? 'selected' : ''}}{{roll|json}}</li>
+</ul>

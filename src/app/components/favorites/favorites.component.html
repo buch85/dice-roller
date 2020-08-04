@@ -1,0 +1,6 @@
+<span>Selected id: {{selectedId}}</span>
+<ul>
+  <li *ngFor="let rollConfiguration of (rollConfigurations$|async)">{{rollConfiguration.id === selectedId ? 'selected' : ''}}{{rollConfiguration|json}}
+    <button mat-flat-button (click)="roll(rollConfiguration)">Roll!</button>
+  </li>
+</ul>

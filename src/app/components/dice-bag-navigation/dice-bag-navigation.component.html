@@ -1,0 +1,16 @@
+<nav mat-tab-nav-bar style="position: sticky;top:0;z-index: 4" class="mat-drawer-container">
+  <a mat-tab-link [routerLink]="['dices']" routerLinkActive #dicesRla="routerLinkActive" [active]="dicesRla.isActive">
+    Dices
+  </a>
+  <a mat-tab-link [routerLink]="['favorites']" routerLinkActive #favoritesRla="routerLinkActive"
+     [active]="favoritesRla.isActive">
+    Favorites
+  </a>
+  <a mat-tab-link [routerLink]="['roll-log']" routerLinkActive #rollLogRla="routerLinkActive"
+     [active]="rollLogRla.isActive">
+    Roll log
+  </a>
+</nav>
+<div>
+  <router-outlet></router-outlet>
+</div>

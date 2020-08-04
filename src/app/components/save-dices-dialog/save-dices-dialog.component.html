@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>Save to favorites</h1>
+<div mat-dialog-content>
+  <p>Save this roll configuration?</p>
+  <p>{{data.expression}}</p>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput [(ngModel)]="data.name">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No Thanks</button>
+  <button mat-button [mat-dialog-close]="data.name" >Ok</button>
+</div>
