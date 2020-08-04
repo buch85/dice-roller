@@ -1,6 +1,6 @@
 {
-  "name": "dice-roller",
-  "short_name": "dice-roller",
+  "name": "dice-bag",
+  "short_name": "dice-bag",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
